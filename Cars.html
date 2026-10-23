@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ar" lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>السيارات - مكتب البراق لتأجير السيارات</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="myFunctions.js"></script>
+</head>
+<body>
+
+<fieldset id="header">
+  <h1>مكتب البراق لتأجير السيارات</h1>
+ <p class="slogan">سيارات مميزة و خدمة متميزة</p></fieldset>
+
+<ul id="nav">
+  <li><a href="home.html">الرئيسية</a></li>
+  <li><a href="AboutUs.html">من نحن</a></li>
+  <li><a href="Cars.html" class="active">السيارات</a></li>
+</ul>
+
+<fieldset id="content">
+
+  <h2>السيارات المتوفرة للتأجير</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>الرمز</th>
+        <th>الصورة</th>
+        <th>الموديل</th>
+        <th>سنة الصنع</th>
+        <th>السعر اليومي</th>
+        <th>إظهار التفاصيل</th>
+        <th>اختيار</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr class="car-row">
+        <td>CR-001</td>
+        <td><img src="images/Toyota Corolla 2023.jpg" alt="Toyota Corolla" class="car-img" /></td>
+        <td>Toyota Corolla</td>
+        <td>2023</td>
+        <td>250000 ل.س</td>
+        <td><button type="button" class="details-btn" data-target="det-001">عرض</button></td>
+        <td>
+          <label for="car-001">
+            <input type="checkbox" id="car-001" class="car-check" value="CR-001" /> اختيار
+          </label>
+        </td>
+      </tr>
+      <tr id="det-001" class="details-row" style="display:none;">
+        <td colspan="7">
+          <strong>الوقود:</strong> بنزين |
+          <strong>ناقل الحركة:</strong> أوتوماتيك |
+          <strong>المقاعد:</strong> 5 |
+          <strong>العداد:</strong> 15000 كم |
+          <strong>اللون:</strong> أبيض
+        </td>
+      </tr>
+
+      <tr class="car-row">
+        <td>CR-002</td>
+        <td><img src="images/Kia Sportage 2022.jpg" alt="Kia Sportage" class="car-img" /></td>
+        <td>Kia Sportage</td>
+        <td>2022</td>
+        <td>400000 ل.س</td>
+        <td><button type="button" class="details-btn" data-target="det-002">عرض</button></td>
+        <td>
+          <label for="car-002">
+            <input type="checkbox" id="car-002" class="car-check" value="CR-002" /> اختيار
+          </label>
+        </td>
+      </tr>
+      <tr id="det-002" class="details-row" style="display:none;">
+        <td colspan="7">
+          <strong>الوقود:</strong> بنزين |
+          <strong>ناقل الحركة:</strong> أوتوماتيك |
+          <strong>المقاعد:</strong> 5 |
+          <strong>العداد:</strong> 22000 كم |
+          <strong>اللون:</strong> أسود
+        </td>
+      </tr>
+
+      <tr class="car-row">
+        <td>CR-003</td>
+        <td><img src="images/Hyundai Elantra 2024.jpg" alt="Hyundai Elantra" class="car-img" /></td>
+        <td>Hyundai Elantra</td>
+        <td>2024</td>
+        <td>300000 ل.س</td>
+        <td><button type="button" class="details-btn" data-target="det-003">عرض</button></td>
+        <td>
+          <label for="car-003">
+            <input type="checkbox" id="car-003" class="car-check" value="CR-003" /> اختيار
+          </label>
+        </td>
+      </tr>
+      <tr id="det-003" class="details-row" style="display:none;">
+        <td colspan="7">
+          <strong>الوقود:</strong> بنزين |
+          <strong>ناقل الحركة:</strong> أوتوماتيك |
+          <strong>المقاعد:</strong> 5 |
+          <strong>العداد:</strong> 5000 كم |
+          <strong>اللون:</strong> رمادي
+        </td>
+      </tr>
+
+      <tr class="car-row">
+        <td>CR-004</td>
+        <td><img src="images/Chevrolet Spark 2021.jpg" alt="Chevrolet Spark" class="car-img" /></td>
+        <td>Chevrolet Spark</td>
+        <td>2021</td>
+        <td>180000 ل.س</td>
+        <td><button type="button" class="details-btn" data-target="det-004">عرض</button></td>
+        <td>
+          <label for="car-004">
+            <input type="checkbox" id="car-004" class="car-check" value="CR-004" /> اختيار
+          </label>
+        </td>
+      </tr>
+      <tr id="det-004" class="details-row" style="display:none;">
+        <td colspan="7">
+          <strong>الوقود:</strong> بنزين |
+          <strong>ناقل الحركة:</strong> عادي |
+          <strong>المقاعد:</strong> 4 |
+          <strong>العداد:</strong> 40000 كم |
+          <strong>اللون:</strong> أحمر
+        </td>
+      </tr>
+
+      <tr class="car-row">
+        <td>CR-005</td>
+        <td><img src="images/Nissan Sunny 2023.jpg" alt="Nissan Sunny" class="car-img" /></td>
+        <td>Nissan Sunny</td>
+        <td>2023</td>
+        <td>220000 ل.س</td>
+        <td><button type="button" class="details-btn" data-target="det-005">عرض</button></td>
+        <td>
+          <label for="car-005">
+            <input type="checkbox" id="car-005" class="car-check" value="CR-005" /> اختيار
+          </label>
+        </td>
+      </tr>
+      <tr id="det-005" class="details-row" style="display:none;">
+        <td colspan="7">
+          <strong>الوقود:</strong> بنزين |
+          <strong>ناقل الحركة:</strong> أوتوماتيك |
+          <strong>المقاعد:</strong> 5 |
+          <strong>العداد:</strong> 12000 كم |
+          <strong>اللون:</strong> فضي
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <p class="center">
+    <button type="button" id="proceedBtn" class="main-btn">متابعة</button>
+  </p>
+
+  <fieldset id="bookingSection" style="display:none;">
+    <h2>نموذج الحجز</h2>
+
+    <form id="bookingForm" action="#" method="post">
+
+      <fieldset>
+        <legend>بيانات مقدم الطلب</legend>
+
+        <p>
+          <label for="fullName">الاسم الكامل (عربي فقط):</label>
+          <input type="text" id="fullName" name="fullName" />
+        </p>
+
+        <p>
+          <label for="nationalId">الرقم الوطني (11 خانة، إلزامي):</label>
+          <input type="text" id="nationalId" name="nationalId" maxlength="11" inputmode="numeric" />
+        </p>
+
+        <p>
+          <label for="mobile">الموبايل (مثال: +963911111111):</label>
+          <input type="tel" id="mobile" name="mobile" maxlength="15" placeholder="+9639XXXXXXXX" />
+        </p>
+
+        <p>
+          <label for="email">البريد الإلكتروني:</label>
+          <input type="email" id="email" name="email" />
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>فترة التأجير</legend>
+
+        <p>
+          <label for="startDate">تاريخ البداية (إلزامي):</label>
+          <input type="date" id="startDate" name="startDate" />
+        </p>
+
+        <p>
+          <label for="endDate">تاريخ النهاية (إلزامي):</label>
+          <input type="date" id="endDate" name="endDate" />
+        </p>
+      </fieldset>
+
+      <p class="center">
+        <input type="submit" value="إرسال" class="main-btn" />
+        <input type="reset" value="إعادة تعيين" class="reset-btn" />
+      </p>
+
+    </form>
+  </fieldset>
+
+</fieldset>
+</body>
+</html>
